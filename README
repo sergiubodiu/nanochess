@@ -1,12 +1,9 @@
-Unobtrusive, indented fork of Toledo Javascript Chess (aka 1k Chess). 
+Unobtrusive, indented fork of Toledo Javascript Chess (aka 1k Chess).
 
 Working example is at http://azer.github.com/toledo-chess
-Oscar Toledo's Homepage: http://nanochess.110mb.com
+Oscar Toledo's Homepage: http://nanochess.org/chess4.html
+Tiny Chess: http://js1k.com/2010-first/demo/750
 
-04.17 Update
-============
-makeMove method added. example usage;
-    
-    > toledoChess.makeMove('a2','a4',function(aiCounter){
-        console.log(aiCounter.from, aiCounter.to);
-      });
+Push to CloudFoundry using [Static buildpack](https://docs.run.pivotal.io/buildpacks/staticfile/index.html)
+
+    cf push nanochess -m 64M -k 64M -b staticfile_buildpack

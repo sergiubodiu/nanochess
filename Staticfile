@@ -1,0 +1,3 @@
+#directory: visible
+FORCE_HTTPS: true
+root: public
